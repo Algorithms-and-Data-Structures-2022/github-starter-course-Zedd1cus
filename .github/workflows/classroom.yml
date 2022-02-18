@@ -1,0 +1,34 @@
+name: GitHub Classroom
+
+# Run this workflow manually in 'Actions' tab.
+on: [workflow_dispatch]
+    
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-20.04
+    steps:
+      # See more https://github.com/actions/checkout.
+      - uses: actions/checkout@v2
+        with: {submodules: 'recursive', fetch-depth: 0}
+        
+      # Run an autograding job.
+      - uses: education/autograding@v1
+        continue-on-error: true
+        id: autograder
+        
+      # Add the badge with the current student's score.
+      - run: git checkout badges || git checkout -b badges
+      - uses: markpatterson27/points-bar@v1
+        with:
+          points: ${{ steps.autograder.outputs.points }}
+          path: '.github/badges/points-bar.svg'
+          type: badge
+          label: 'Score'
+      
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add '.github/badges/points-bar.svg'
+          git commit -m "Add/Update points bar" || exit 0
+          git push origin badges
