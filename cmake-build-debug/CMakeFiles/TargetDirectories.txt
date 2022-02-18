@@ -1,0 +1,3 @@
+C:/GithubForAsd/github-starter-course-Zedd1cus/cmake-build-debug/CMakeFiles/github_starter_course_Zedd1cus.dir
+C:/GithubForAsd/github-starter-course-Zedd1cus/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/GithubForAsd/github-starter-course-Zedd1cus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
