@@ -61,6 +61,12 @@ build CMakeFiles/github_starter_course_Zedd1cus.dir/wrong.cpp.obj: CXX_COMPILER_
   OBJECT_DIR = CMakeFiles\github_starter_course_Zedd1cus.dir
   OBJECT_FILE_DIR = CMakeFiles\github_starter_course_Zedd1cus.dir
 
+build CMakeFiles/github_starter_course_Zedd1cus.dir/hehe.cpp.obj: CXX_COMPILER__github_starter_course_Zedd1cus_Debug C$:/GithubForAsd/github-starter-course-Zedd1cus/hehe.cpp || cmake_object_order_depends_target_github_starter_course_Zedd1cus
+  DEP_FILE = CMakeFiles\github_starter_course_Zedd1cus.dir\hehe.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\github_starter_course_Zedd1cus.dir
+  OBJECT_FILE_DIR = CMakeFiles\github_starter_course_Zedd1cus.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target github_starter_course_Zedd1cus
@@ -69,7 +75,7 @@ build CMakeFiles/github_starter_course_Zedd1cus.dir/wrong.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable github_starter_course_Zedd1cus.exe
 
-build github_starter_course_Zedd1cus.exe: CXX_EXECUTABLE_LINKER__github_starter_course_Zedd1cus_Debug CMakeFiles/github_starter_course_Zedd1cus.dir/test.cpp.obj CMakeFiles/github_starter_course_Zedd1cus.dir/wrong.cpp.obj
+build github_starter_course_Zedd1cus.exe: CXX_EXECUTABLE_LINKER__github_starter_course_Zedd1cus_Debug CMakeFiles/github_starter_course_Zedd1cus.dir/test.cpp.obj CMakeFiles/github_starter_course_Zedd1cus.dir/wrong.cpp.obj CMakeFiles/github_starter_course_Zedd1cus.dir/hehe.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\github_starter_course_Zedd1cus.dir
